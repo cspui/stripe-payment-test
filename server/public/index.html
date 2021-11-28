@@ -4,16 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/stripe.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <script src="utils.js" defer></script>
     <script src="payment.js" defer></script>
+    <title>Document</title>
 
-    <head>
-
-    </head>
+</head>
 
 <body>
     <div style="justify-content: center; align-content: center; ">
-        <button style="height: 5vh; width: 10vw;">Click</button>
+        <h1 style="padding-left: 15px;"> Select a payment type </h1>
+
+        <br>
+
+        <button id="normal" style="height: 5vh; width: 10vw; margin: 10px;">Normal USD payment</button>
+
+
+        <form id="payment-form">
+            <label for="fpx-bank-element">
+                FPX Bank
+            </label>
+            <div id="fpx-bank-element">
+                <!-- A Stripe Element will be inserted here. -->
+            </div>
+
+            <button type="submit">Pay</button>
+
+            <!-- Used to display form errors. -->
+            <div id="error-message" role="alert"></div>
+        </form>
+        <div id="messages" role="alert"></div>
     </div>
 </body>
 
