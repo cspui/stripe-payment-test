@@ -4,8 +4,8 @@
   "description": "",
   "main": "payment.js",
   "scripts": {
-    "devStart": "nodemon server.js"
-
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

@@ -9,6 +9,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 app.use(express.static("public"));
+const port = process.env.PORT || 3000;
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
@@ -100,4 +101,4 @@ app.post('/checkout-session-fpx', async (req, res) => {
     }
 });
 
-app.listen(3000);
+app.listen(port, () => console.log(`App is listening at http://localhost:${port}`));
