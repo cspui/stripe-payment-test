@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/stripe.css" />
     <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AUujeoEo2RDcWLiR-lkF8rdzKNdAAdiAAWCMQIts_kwf83DW_mip2jsimn8KNb3-8jFKOdCdgSGPS7aM"></script>
 
     <script src="utils.js" defer></script>
     <script src="payment.js" defer></script>
@@ -19,8 +20,8 @@
         <h1 style="padding-left: 15px;"> Select a payment type </h1>
 
         <br>
-
-        <button id="normal" style="height: 5vh; width: 10vw; margin: 10px;">Normal USD payment</button>
+        <h3 style="padding-left: 15px;"> Stripe </h3>
+        <button id="normal" style="height: 5vh; width: 10vw; margin: 10px;">Normal USD banking</button>
 
 
         <form id="payment-form">
@@ -37,6 +38,11 @@
             <div id="error-message" role="alert"></div>
         </form>
         <div id="messages" role="alert"></div>
+
+        <br>
+        <h3 style="padding-left: 15px;"> Paypal </h3>
+        <input type="number" id="amount" placeholder="Enter a amount">
+        <div id="paypal"></div>
     </div>
 </body>
 
