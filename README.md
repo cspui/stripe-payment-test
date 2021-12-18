@@ -6,8 +6,10 @@
 ## Payment type
 - Normal banking
 - FPX banking Malaysia
+- Paypal
 
 ## Build
 - Hosted on Heroku using Node.js
 - Stripe API payment gateway
+- Paypal client integration
 
