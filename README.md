@@ -4,7 +4,7 @@
 **Link**: https://stripe-payment-preview.herokuapp.com/
 
 ## Payment type
-- Normal usd banking
+- Normal banking
 - FPX banking Malaysia
 
 ## Build
